@@ -1,4 +1,4 @@
-package net.preibisch.biglogger.generic;
+package net.preibisch.biglogger.app;
 
 public enum ApplicationMode {
     Fiji, Headless, Cluster, Cloud

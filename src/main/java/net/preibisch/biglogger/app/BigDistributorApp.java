@@ -1,4 +1,6 @@
-package net.preibisch.biglogger.generic;
+package net.preibisch.biglogger.app;
+
+import net.preibisch.biglogger.generic.IndexableClass;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -7,8 +9,8 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.TYPE})
-@Indexable
-public @interface DistributeMainApp {
+@IndexableClass
+public @interface BigDistributorApp {
 
     ApplicationMode type();
 

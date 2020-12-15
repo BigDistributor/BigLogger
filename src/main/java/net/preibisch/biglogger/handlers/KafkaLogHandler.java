@@ -1,6 +1,6 @@
 package net.preibisch.biglogger.handlers;
 
-import net.preibisch.biglogger.generic.ApplicationMode;
+import net.preibisch.biglogger.app.ApplicationMode;
 import net.preibisch.biglogger.generic.LogHandler;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.Producer;
@@ -12,8 +12,11 @@ import java.util.logging.Handler;
 import java.util.logging.LogRecord;
 import java.util.logging.SimpleFormatter;
 
-@LogHandler(format = "kafka", type = {ApplicationMode.Cloud,ApplicationMode.Cluster})
+@LogHandler(format = "kafka", type = {ApplicationMode.Cloud, ApplicationMode.Cluster})
 public class KafkaLogHandler extends Handler {
+    public KafkaLogHandler() {
+        System.out.println("Kafka Log Handler initiated..");
+    }
 
     private String servers;
 
