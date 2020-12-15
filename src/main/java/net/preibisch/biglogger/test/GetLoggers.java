@@ -6,6 +6,7 @@ import org.reflections.Reflections;
 import java.util.Iterator;
 import java.util.Set;
 
+//TODO get all log handler and run for application type
 public class GetLoggers {
     public static void main(String[] args) {
         Set<Class<?>> reflections = new Reflections("net.preibisch.biglogger").getTypesAnnotatedWith(LogHandler.class);

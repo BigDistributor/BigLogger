@@ -18,13 +18,10 @@ public class TerminalLogHandler extends Handler {
         final String msg;
         if (getFormatter() == null) {
             msg = this.defaultFormatter.format(record);
-            System.out.println("null formatter");
-            System.out.println(msg);
         } else {
             msg = getFormatter().format(record);
-            System.out.println("with formatter");
-            System.out.println(msg);
         }
+        System.out.println(msg);
 
 
     }

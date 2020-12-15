@@ -13,7 +13,7 @@ Application mode can be:
   - Cloud instances that need to communicate with the master node.
   
 ------
-#### Labraries used :
+#### Libraries used :
 
 Apache kafka 
 Reflections
