@@ -7,7 +7,7 @@ import org.junit.Test;
 public class LoggerTest {
 
     @Test
-    public void serializeCarObjectEnsureCorrectOutputJson() throws Exception {
+    public void logMessageEnsureCorrectOutputFormat() {
         new HelloClass().sayHello();
         new App();
         new HelloClass().sayHello();

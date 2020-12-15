@@ -10,14 +10,22 @@ import java.util.logging.Handler;
 import java.util.logging.LogManager;
 import java.util.logging.Logger;
 
+/**
+ * Class {@code Logger} is the main root of BigDistributor.
+ * Any Main app will need to extends from this class
+ * App have 4 modes: Fiji, Headless, Cluster, Cloud
+ * And based on mode the LogHandler will be initiated
+ *
+ * @author Marwan Zouinkhi
+ * @see ApplicationMode
+ * @since V0.1
+ */
 @BigDistributorApp(type = ApplicationMode.Headless)
-public abstract class MainApp {
+public abstract class BigDistributorMainApp {
 
-    public MainApp() {
-
-        Class<? extends MainApp> cls = this.getClass();
-        System.out.println("Main App: " + cls);
-        BigDistributorApp dist = cls.getAnnotation(BigDistributorApp.class);
+    public BigDistributorMainApp() {
+        System.out.println("Main App: " + this.getClass());
+        BigDistributorApp dist = this.getClass().getAnnotation(BigDistributorApp.class);
         System.out.println("App Type: " + dist.type());
         initLogger(dist.type());
     }
