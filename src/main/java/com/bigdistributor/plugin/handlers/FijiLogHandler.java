@@ -1,7 +1,7 @@
 package com.bigdistributor.plugin.handlers;
 
+import com.bigdistributor.core.app.ApplicationMode;
 import com.bigdistributor.plugin.generic.LogHandler;
-import app.ApplicationMode;
 import org.apache.log4j.BasicConfigurator;
 import org.scijava.Context;
 import org.scijava.log.LogService;

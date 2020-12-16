@@ -14,7 +14,6 @@
     <artifactId>BigLogger</artifactId>
     <version>0.1-SNAPSHOT</version>
 
-
     <dependencies>
         <dependency>
             <groupId>org.reflections</groupId>
@@ -41,7 +40,7 @@
         </dependency>
         <dependency>
             <groupId>com.bigdistributor</groupId>
-            <artifactId>BigDistributor</artifactId>
+            <artifactId>BigDistributor-core</artifactId>
             <version>0.1-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>

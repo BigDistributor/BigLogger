@@ -1,6 +1,7 @@
 package com.bigdistributor.plugin.generic;
 
 import app.BigDistributorApp;
+import com.bigdistributor.core.app.IndexableClass;
 import org.reflections.Reflections;
 
 import java.lang.annotation.Annotation;

@@ -1,6 +1,6 @@
 package com.bigdistributor.plugin.handlers;
 
-import app.ApplicationMode;
+import com.bigdistributor.core.app.ApplicationMode;
 import com.bigdistributor.plugin.generic.LogHandler;
 
 import java.util.Date;

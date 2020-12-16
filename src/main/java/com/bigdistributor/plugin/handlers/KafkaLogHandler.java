@@ -1,7 +1,8 @@
 package com.bigdistributor.plugin.handlers;
 
+
+import com.bigdistributor.core.app.ApplicationMode;
 import com.bigdistributor.plugin.generic.LogHandler;
-import app.ApplicationMode;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.Producer;
 import org.apache.kafka.clients.producer.ProducerRecord;
