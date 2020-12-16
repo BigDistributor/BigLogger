@@ -1,6 +1,6 @@
-package net.preibisch.biglogger.generic;
+package com.bigdistributor.plugin.generic;
 
-import net.preibisch.biglogger.app.ApplicationMode;
+import app.ApplicationMode;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -22,7 +22,7 @@ public @interface LogHandler {
 
     String format();
 
-    ApplicationMode[] type();
+    ApplicationMode[] modes();
 
     double priority() default 0.0D;
 }

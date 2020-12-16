@@ -1,4 +1,4 @@
-package net.preibisch.biglogger.handlers;
+package com.bigdistributor.plugin.handlers;
 
 import java.io.PrintStream;
 import java.util.logging.Level;

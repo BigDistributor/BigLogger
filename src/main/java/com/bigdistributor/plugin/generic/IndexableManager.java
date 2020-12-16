@@ -1,6 +1,6 @@
-package net.preibisch.biglogger.generic;
+package com.bigdistributor.plugin.generic;
 
-import net.preibisch.biglogger.app.BigDistributorApp;
+import app.BigDistributorApp;
 import org.reflections.Reflections;
 
 import java.lang.annotation.Annotation;

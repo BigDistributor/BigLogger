@@ -1,7 +1,7 @@
-package net.preibisch.biglogger;
+package com.bigdistributor.plugin;
 
-import net.preibisch.biglogger.data.App;
-import net.preibisch.biglogger.data.HelloClass;
+import com.bigdistributor.plugin.data.App;
+import com.bigdistributor.plugin.data.HelloClass;
 import org.junit.Test;
 
 public class LoggerTest {

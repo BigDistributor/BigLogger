@@ -1,14 +1,14 @@
-package net.preibisch.biglogger.handlers;
+package com.bigdistributor.plugin.handlers;
 
-import net.preibisch.biglogger.app.ApplicationMode;
-import net.preibisch.biglogger.generic.LogHandler;
+import app.ApplicationMode;
+import com.bigdistributor.plugin.generic.LogHandler;
 
 import java.util.Date;
 import java.util.logging.Formatter;
 import java.util.logging.Handler;
 import java.util.logging.LogRecord;
 
-@LogHandler(format = "terminal", type = {ApplicationMode.Headless, ApplicationMode.Fiji})
+@LogHandler(format = "terminal", modes = {ApplicationMode.Headless, ApplicationMode.Fiji})
 public class TerminalLogHandler extends Handler {
     public TerminalLogHandler() {
         System.out.println("Terminal Log Handler initiated..");

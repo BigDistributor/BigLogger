@@ -1,7 +1,7 @@
-package net.preibisch.biglogger.handlers;
+package com.bigdistributor.plugin.handlers;
 
-import net.preibisch.biglogger.app.ApplicationMode;
-import net.preibisch.biglogger.generic.LogHandler;
+import com.bigdistributor.plugin.generic.LogHandler;
+import app.ApplicationMode;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.Producer;
 import org.apache.kafka.clients.producer.ProducerRecord;
@@ -12,7 +12,7 @@ import java.util.logging.Handler;
 import java.util.logging.LogRecord;
 import java.util.logging.SimpleFormatter;
 
-@LogHandler(format = "kafka", type = {ApplicationMode.Cloud, ApplicationMode.Cluster})
+@LogHandler(format = "kafka", modes = {ApplicationMode.Cloud, ApplicationMode.Cluster})
 public class KafkaLogHandler extends Handler {
     public KafkaLogHandler() {
         System.out.println("Kafka Log Handler initiated..");
@@ -32,7 +32,6 @@ public class KafkaLogHandler extends Handler {
     public void publish(final LogRecord record) {
         if (ensureReady()) {
             try {
-                //insertRecord(record);
                 final String msg;
                 if (getFormatter() == null) {
                     msg = this.defaultFormatter.format(record);

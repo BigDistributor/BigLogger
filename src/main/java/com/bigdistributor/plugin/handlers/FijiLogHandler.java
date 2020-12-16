@@ -1,16 +1,15 @@
-package net.preibisch.biglogger.handlers;
+package com.bigdistributor.plugin.handlers;
 
-import net.preibisch.biglogger.app.ApplicationMode;
-import net.preibisch.biglogger.generic.LogHandler;
+import com.bigdistributor.plugin.generic.LogHandler;
+import app.ApplicationMode;
 import org.apache.log4j.BasicConfigurator;
 import org.scijava.Context;
 import org.scijava.log.LogService;
-//import org.scijava.ui.swing.console.LoggingPanel;
 
 import java.util.logging.Handler;
 import java.util.logging.LogRecord;
 
-@LogHandler(format = "fiji", type = {ApplicationMode.Fiji})
+@LogHandler(format = "fiji", modes = {ApplicationMode.Fiji})
 public class FijiLogHandler extends Handler {
     public FijiLogHandler() {
         System.out.println("Fiji Log Handler initiated..");

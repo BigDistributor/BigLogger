@@ -1,4 +1,4 @@
-package net.preibisch.biglogger.generic;
+package com.bigdistributor.plugin.generic;
 
 
 import java.lang.annotation.ElementType;

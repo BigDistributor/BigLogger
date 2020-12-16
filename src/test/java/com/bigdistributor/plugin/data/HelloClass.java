@@ -1,4 +1,4 @@
-package net.preibisch.biglogger.data;
+package com.bigdistributor.plugin.data;
 
 import java.util.logging.Logger;
 
